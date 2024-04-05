@@ -1,0 +1,157 @@
+<html>
+<head>
+  <title>표연습</title>
+</head>
+<body> 
+  <h2>표 연습</h2>
+  <table border>
+    <thead> <!--디자인을 위함-->
+      <tr> <!--행-->
+        <th>01번셀열</th> <!--열 헤드 글자 진하게, 가운데정렬-->
+        <th>02번셀열</th>
+        <th>03번셀열</th>
+      </tr>
+    </thead>
+    <tr> <!--행-->
+      <td>1번 &nbsp;&nbsp;&nbsp;&nbsp; 셀열</td> <!--열--> <!--&nbsp; 공백-->
+      <td>2번셀열</td>
+      <td>3번셀열</td>
+    </tr>
+    <tr>
+      <td>11번셀열</td>
+      <td>12번셀열</td>
+      <td>13번셀열</td>
+    </tr>
+    <tr>
+      <td>21번셀열</td>
+      <td>22번셀열</td>
+      <td>23번셀열</td>
+    </tr>
+  </table>
+  <br/><hr/>
+  <h2>길동이네 가족소개1</h2> <!--원본/숙제-->
+  <table border>
+    <tr>
+      <td>관계</td>
+      <td>성명</td>
+      <td>나이</td>
+    </tr>
+    <tr>
+      <td>아버지</td>
+      <td>홍장군</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>어머니</td>
+      <td>김말숙</td>
+      <td>55</td>
+    </tr>
+  </table>
+  <br/><hr/>
+  <h2>길동이네 가족소개2</h2>
+  <table border="20px" bordercolor="red" cellspacing="10px" width="500px" height="400px">
+<!--  <table border width="100%" height="100%"> -->
+    <tr>
+      <th>관계</th>
+      <th>성명</th>
+      <th>나이</th>
+    </tr>
+    <tr align="center"> <!--행에서의 작업은 tr 열에서의 작업은 td 전체 열의 작업은 행tr에서 작업-->
+      <td>아버지</td>
+      <td>홍장군</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>어머니</td>
+      <td>김말숙</td>
+      <td>55</td>
+    </tr>
+  </table>
+  <br/><hr/>
+  <h2 align="center">길동이네 &lt;가족&gt;소개3</h2> <!--<>절대 사용 불가 제어코드&; 사용하기 -->
+  <table border align="center" cellpadding="15px">
+    <caption><font size='5'><strong>길동이네집</strong></font></caption>
+    <tr>
+      <td>관계</td>
+      <td align="center">성명</td>
+      <td>나이</td>
+    </tr>
+    <tr>
+      <td>아버지</td>
+      <td bgcolor="red">홍 &nbsp;&nbsp; 장 &nbsp;&nbsp;&nbsp; 군</td>
+      <td>58</td>
+    </tr>
+    <tr bgcolor="blue">
+      <td><font color="white">어머니</font></td>
+      <td><font color="white">김말숙</font></td>
+      <td><font color="white">55</font></td>
+    </tr>
+  </table>
+  <br/><hr/>
+  <h2>길동이네 가족소개4</h2>
+  <table border="0px" cellpadding="10px" cellspacing="0px"> <!--cell spacing 0주고 border 0주면 선없어짐-->
+    <tr bgcolor="#ff0">
+      <td>관계</td>
+      <td>성명</td>
+      <td>나이</td>
+    </tr>
+    <tr bgcolor="#0f0">
+      <td>아버지</td>
+      <td>홍장군</td>
+      <td>58</td>
+    </tr>
+    <tr bgcolor="brown">
+      <td>어머니</td>
+      <td>김말숙</td>
+      <td>55</td>
+    </tr>
+  </table>
+  <br/><hr/>
+  <h2>길동이네 가족소개5</h2>
+  <table border cellpadding="20px">
+    <tr>
+      <td>관계</td>
+      <td colspan="2" align="center"><b>성명/나이</b></td>
+      <!--<td>나이</td>원래는 지우기-->
+      <td>가족사진</td>
+    </tr>
+    <tr>
+      <td rowspan="2" align="center">부모</td>
+      <td>홍장군</td>
+      <td>58</td>
+      <td rowspan="2"><a href="../../images/7.jpg" target="_blank"><img src="../../images/7.jpg" width="100px"></a></td>
+    </tr>
+    <tr>
+      <!--<td>어머니</td>-->
+      <td>김말숙</td>
+      <td>55</td>
+      <!--<td>사진</td>-->
+    </tr>
+        <tr>
+      <td align="center">비고</td>
+      <td colspan="3" align="center">6시 기상</td>
+      <!--<td>55</td>-->
+      <!--<td>사진</td>-->
+    </tr>
+  </table>
+  <br/><hr/>
+  <h2>길동이네 가족소개6</h2>
+  <table border>
+    <tr>
+      <td>관계</td>
+      <td>성명</td>
+      <td>나이</td>
+    </tr>
+    <tr>
+      <td>아버지</td>
+      <td>홍장군</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>어머니</td>
+      <td>김말숙</td>
+      <td>55</td>
+    </tr>
+  </table>
+</body>
+</html>
