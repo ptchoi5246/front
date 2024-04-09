@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test21.html</title>
+  <style>
+    .aa1, .aa2, .aa3 {
+      background-color: lightcoral; /*div 문단  태그 - 블록 전체 backgroudn color 설정*/
+      display: inline; /*Block을 InLine 속성으로 바꾸기*/
+    }
+    .aa4 {
+      background-color: blanchedalmond;
+      /* display: none; 영역을 사라지게 만들고 공간마저 없애버림 */
+      visibility: hidden; /*영역은 사라지는데 공간은 남아있음*/
+    }
+    .aa5, .aa6, .aa7 {
+      background-color: lightgray;
+      border: 1px solid black;
+      width: 400px;
+    }
+    .bb1 {
+      display: inline; /*bb1은 inline 이기 때문에 inline을 해도 의미가 없다*/
+      /* display: block; */
+      /* display: inline-block; inline 속성을 차지하면서 영역만 block으로 차지한다 */
+      border:  1px solid red;
+      width: 100px;
+      padding: 10px;
+    }
+    .bb1:hover {
+      background-color: green;
+    }
+    .bb2 {
+      /* display: inline; bb1은 inline 이기 때문에 inline을 해도 의미가 없다 */
+      /* display: block; */
+      display: inline-block; /*inline 속성을 차지하면서 영역만 block으로 차지한다*/
+      border:  1px solid red;
+      width: 100px;
+      padding: 10px;
+    }
+    .bb2:hover {
+      background-color: green;
+    }
+    .bb3 {
+      /* display: inline; bb1은 inline 이기 때문에 inline을 해도 의미가 없다 */
+      display: block;
+      /* display: inline-block; inline 속성을 차지하면서 영역만 block으로 차지한다 */
+      border:  1px solid red;
+      width: 100px;
+      padding: 10px;
+    }
+    .bb3:hover {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h2>Display 속성</h2>
+  <p>각각의 요소들을 어떻게 보여줄지를 결정한다.</p>
+  <p>
+    속성처리 : visibility(기본값 : 보이기 - 모든내용 다 보임) / hidden(감추기) / inherit(부모요소의 값을 상속받아서 사용)
+  </p>
+  <p>
+    <b>Display 속성</b>
+    none : <span>화면</span>에서 완전히 사라지게 한다.<br/>
+  </p>
+  <hr/>
+  <h3>사용 예제</h3>
+  <div class="aa1">1.안녕</div>
+  <div class="aa2">2.안녕</div>
+  <div class="aa3">3.안녕</div>
+  <div class="aa4">4.안녕</div>
+  <hr/>
+  <h2>Block / InLine / InLine-Block</h2>
+  <div class="aa5">
+    5.<font color="red" class="bb1">안녕(InLine)</font>감사합니다.
+  </div>
+  <div class="aa6">
+    6.<span  class="bb2"><font color="orange">안녕(InLine-Block)</font></span>
+  </div>
+  <div class="aa7">
+    7.<span  class="bb3"><font color="green">안녕(Block)</font></span>
+  </div>
+</body>
+</html>
