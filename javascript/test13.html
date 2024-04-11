@@ -31,10 +31,27 @@
       if(document.getElementById("card5").checked) card += document.getElementById("card5").value + "/";
       if(document.getElementById("card6").checked) card += document.getElementById("card6").value + "/";
 
+      let mnt="";
+      if(document.getElementById("mnt").options[0].selected) mnt += document.getElementById("mnt").options[0].value + "/";
+      if(document.getElementById("mnt").options[1].selected) mnt += document.getElementById("mnt").options[1].value + "/";
+      if(document.getElementById("mnt").options[2].selected) mnt += document.getElementById("mnt").options[2].value + "/";
+      if(document.getElementById("mnt").options[3].selected) mnt += document.getElementById("mnt").options[3].value + "/";
+      if(document.getElementById("mnt").options[4].selected) mnt += document.getElementById("mnt").options[4].value + "/";
+      if(document.getElementById("mnt").options[5].selected) mnt += document.getElementById("mnt").options[5].value + "/";
+      if(document.getElementById("mnt").options[6].selected) mnt += document.getElementById("mnt").options[6].value + "/";
+      if(document.getElementById("mnt").options[7].selected) mnt += document.getElementById("mnt").options[7].value + "/";
+
+      let content = document.getElementById("content").value;
+
+      let fName = document.getElementById("fName").value;
 
       let res = "";
       res += "성별 : <font color='red'><b>" + gender + "</b></font><br/>";
-      res += "소지한 카드 : <font color='green'><b>" + card + "</b></font><br/>";
+      res += "소지한 카드 : <font color='blue'><b>" + card + "</b></font><br/>";
+      res += "다녀온 산 : <font color='green'><b>" + mnt + "</b></font><br/>";
+      res += "자기소개 : <font color='purple'><b>" + content + "</b></font><br/>";
+      res += "첨부파일 : <font color='brown'><b>" + fName + "</b></font><br/>";
+      
 
       // document.getElementById("demo").innerText = res; //innerText : 문자만 출력
       document.getElementById("demo").innerHTML = res; //innerHTML : 문자 + HTML 코드(font size, color) 같이 출력
@@ -67,8 +84,8 @@
     <tr>
       <th>다녀온 산</th>
       <td>
-        <select name="mnt" size="5" multiple class="form-control">
-          <option selected>백두산</option>
+        <select name="mnt" id="mnt" size="5" multiple class="form-control">
+          <option>백두산</option>
           <option>한라산</option>
           <option>태백산</option>
           <option>소백산</option>
@@ -82,7 +99,7 @@
     <tr>
       <th>자기소개</th>
       <td>
-        <textarea rows="5" name="content" class="form-control"></textarea>
+        <textarea rows="5" name="content" id="content" class="form-control"></textarea>
       </td>
     </tr>
     <tr>
