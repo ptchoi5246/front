@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test4_4.html</title>
+  <script>
+    'use strict'; //함수(function)부터 메모리에 올려서 변수선언 안 해도 에러 안 난다.
+
+    function atom1() {
+      // document.write("atom1 함수 : 안녕222 :)<br/>"); //본문에 출력
+      alert("atom1 함수 : 안녕222 :)") //메세지 출력
+    }
+
+    function atom4(su) {
+      alert("su : " + su);
+    }
+
+    function atom5(su, str) {
+      alert("atom5 함수 \n\n su : " + su + ", str : " + str); //\n 줄바꿈 메세지에서도 가능
+    }
+
+    function atom6() { //함수 안의 변수 선언 정의 안 해서 에러난다.
+      let su = 2000; //에러 : su is not defined
+      let str = "반갑습니다 :)";
+      alert("atom6 함수 \n su : " + su + ", str : " + str); //\n 줄바꿈 메세지에서도 가능
+      atom5(su,str);
+    }
+  </script>
+</head>
+<body>
+  <h2>이곳은 본문입니다.</h2>
+
+
+  <input type="button" value="atom1" onclick="atom1()" />
+  <!-- <input type="button" value="atom2" onclick="atom2()" /> atom2 호출 가능 -->
+  <button type="button" onclick="atom2()">atom2 호출</button> <!--26과 동일-->
+  <button type="button" onclick="atom3()">atom3 호출</button>
+  <button type="button" onclick="atom4(500)">atom4 호출</button>
+  <button type="button" onclick="atom5(500, '안녕!')">atom5 호출</button>
+  <button type="button" onclick="atom6()">atom6 호출</button>
+
+  <script>
+    function atom2() {
+      // document.write("atom2 함수 : 안녕333 :)<br/>"); //본문에 출력
+      alert("atom2 함수 : 안녕333 :)") //메세지 출력
+    }
+    function atom3() {
+      atom1();
+      atom2();
+      alert("작업 종료!!!")
+    }
+  </script>
+</body>
+</html>

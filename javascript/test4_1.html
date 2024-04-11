@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test4_1.html</title>
+  <script>
+    document.write("안녕111 :)<br/>");
+
+    atom1(); // javascript에서는 함수(function)만 먼저 빼서 메모리에 미리 저장해둔다 :: 함수(function) 전에 호출을 해도 출력이 가능하다
+
+    function atom1() { //named functioin // 메소드랑 거의 비슷하다 :: 접근제한자 리턴타입 메소드이름() {실행블럭} //익명함수 : 메소드 이름 없이 작성 가능
+      document.write("안녕222 :)<br/>");
+    }
+
+    // atom1();
+    // atom2(); //body 태그를 보지 않아서 출력 불가능 - 오류
+
+  </script>
+</head>
+<body>
+  <h2>이곳은 본문입니다.</h2>
+
+  <script>
+    function atom2() {
+      document.write("안녕333 :)<br/>");
+    }
+  </script>
+</body>
+</html>

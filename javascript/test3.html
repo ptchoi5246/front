@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    'use strict'; //무조건 변수 선언 해라. 변수 선언 안 하면 오류난다.
+
+    var aa = 100;
+    console.log("1. aa : " , aa);
+    var aa = 3.14; //var 변수 선언은 계속해도 상관없다. 값 변경 가능
+    console.log("2. aa : " , aa);
+    aa = "Korea";
+    console.log("3. aa : " , aa);
+
+    let bb = 200;
+    console.log("1. bb : " , bb);
+    bb = 3.141592; //let 변수 선언은 계속하면 오류난다. 값 변경 가능
+    console.log("2. bb : " , bb);
+    bb = "Seoul";
+    console.log("3. bb : " , bb);
+
+    const cc = 300;
+    console.log("1. cc : " , cc);
+    // cc = 3.14; //const 변수 선언 오류, 값 변경 불가능, 한 번만 선언 가능
+    // console.log("2. cc : " , cc);
+
+    dd = 400; //변수 선언 안 해도 오류 안 난다. //use strict - 변수 선언 무조건! 오류난다.
+    console.log("dd : " , dd);
+  </script>
+  <title>test3.html</title>
+</head>
+<body>
+  <h2>본문입니다.</h2>
+</body>
+</html>

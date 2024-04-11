@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test8_2.html</title>
+  <script>
+    'use strict';
+
+    let su1 = 100;
+    console.log("1. su1 : " , su1);
+    {
+      console.log("2. su1 : " , su1);
+      // su2 = 200; -- use strict 변수 선언 무조건!
+      // console.log("su2 : ", su2);
+      let su2 = 200;
+      console.log("2. su2 : ", su2);
+
+      // su1 = su1 + su2;
+      su1 += su2;
+      console.log("3. su1 : " , su1);
+    }
+    console.log("4. su1 : " , su1);
+    // console.log("su2 : " , su2); //오류 -- 중괄호 밖에서 su2 호출 / 중괄호 안에 su2 변수 선언 :: 변수의 생명주기
+    su1++;
+    console.log("5. su1 : " , su1);
+    console.log("6. su1 : " , su1++); //후위연산자 조심!
+    console.log("7. su1 : " , ++su1);
+  </script>
+</head>
+<body>
+  <h2>본문</h2>
+</body>
+</html>
